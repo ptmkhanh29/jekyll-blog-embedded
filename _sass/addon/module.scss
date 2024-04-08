@@ -60,6 +60,12 @@
   text-decoration: none;
 }
 
+%link-hover-home-top-bar {
+  color: #50fa7b !important;
+  border-bottom: 1.5px solid #50fa7b;
+  text-decoration: none;
+}
+
 %link-color {
   color: var(--link-color);
 }
@@ -142,6 +148,11 @@
 @mixin mt-mb($value) {
   margin-top: $value;
   margin-bottom: $value;
+}
+
+@mixin profile-mt-mb($top, $bottom) {
+  margin-top: $top;
+  margin-bottom: $bottom;
 }
 
 @mixin ml-mr($value) {
