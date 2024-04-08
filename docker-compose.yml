@@ -1,0 +1,21 @@
+# Usage: docker compose up --build
+# tag --build: forces Docker Compose to perform build images before starting containers.
+# Purpose: If the image has been built before and you have made no changes in the Dockerfile or build configuration, 
+#          you can ignore this flag and just use `docker-compose up`.
+
+version: '3.8'
+
+services:
+
+  jekyll-prod:
+    build:
+      context: . # Find Dockerfile
+      args:
+        DOCKER_USER: ${DOCKER_USER:-ptmkhanh29}
+    image: jekyll-chirpy-docker:latest
+    volumes:
+      - .:/home/ptmkhanh29/projects/jekyll-blog-embedded # Mount the project folder into the container
+    ports:
+      - "4000:4000"
+    command: >
+      sh -c "bundle install && jekyll serve --host 0.0.0.0"

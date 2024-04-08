@@ -27,7 +27,9 @@ Tản mạn xong rồi, trong phần này mình sẽ tập trung descriptio
 
 ### Setting up Environment
 
-It's highly suggest to use any Linux distro _(Ubuntu: highly recommended)_ compared to Windows. Most of the cases, you won't face any issues while building the project within your local system if you follow the instruction below properly. But if you're facing any issue, you can post them within the repo discussion [Help Request](https://github.com/Grow-with-Open-Source/Notebook/discussions/3 "Goto Help Request Discussion")...
+Tác giả của project này cũng recommended các bạn build project trên một distro của Linux, ở đây mình sử dụng cả Window và Ubuntu luôn. Nên sẽ có hướng dẫn chi tiết cho Window và Ubuntu, Còn MacOS mình vẫn giữ nguyên description trước của một bạn mà mình đã folk repo của bạn đó về.
+
+> It's highly suggest to use any Linux distro _(Ubuntu: highly recommended)_ compared to Windows. Most of the cases, you won't face any issues while building the project within your local system if you follow the instruction below properly. But if you're facing any issue, you can post them within the repo discussion [Help Request](https://github.com/Grow-with-Open-Source/Notebook/discussions/3 "Goto Help Request Discussion")...
 
 #### For Ubuntu:
 
