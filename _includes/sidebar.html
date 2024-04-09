@@ -1,5 +1,4 @@
 <!-- The Side Bar -->
-
 <aside aria-label="Sidebar" id="sidebar" class="d-flex flex-column align-items-end">
   <header class="profile-wrapper">
     <a href="{{ '/' | relative_url }}" id="avatar" class="rounded-circle">
@@ -21,7 +20,13 @@
       <a href="{{ '/' | relative_url }}">{{ site.title }}</a>
     </h1>
     <p class="site-subtitle fst-italic mb-0">{{ site.tagline }}</p>
+    <!-- Line -->
+    <div class="w-100 d-flex justify-content-center">
+        <div class="custom-border-top-line"></div>
+    </div>
+    <!-- End Line -->
   </header>
+
   <!-- .profile-wrapper -->
   <nav class="flex-column flex-grow-1 w-100 ps-0">
     <ul class="nav">
@@ -47,6 +52,13 @@
     </ul>
   </nav>
 
+  <!-- Line -->
+  <div class="w-100 d-flex justify-content-center">
+      <div class="custom-border-top-line"></div>
+  </div>
+  <!-- End Line -->
+
+  <!-- Icon Profile -->
   <div class="sidebar-bottom d-flex flex-wrap  align-items-center w-100">
     {% unless site.theme_mode %}
       <button type="button" class="mode-toggle btn" aria-label="Switch Mode">
