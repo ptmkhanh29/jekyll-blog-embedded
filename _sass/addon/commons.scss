@@ -772,6 +772,15 @@ $btn-mb: 0.5rem;
     margin-bottom: 10px; /* Đặt khoảng cách dưới */
   }
 
+  .custom-border-bottom-line {
+    border-top: 0.5px solid var(--line-sidebar-color);
+    width: 100%; /* Hoặc bất kỳ giá trị nào bạn muốn */
+    margin-top: 20px; /* Đặt khoảng cách trên */
+    margin-bottom: 10px; /* Đặt khoảng cách dưới */
+    margin-left: 1.5rem;
+    margin-right: 1.25rem;
+  }
+
   ul {
     margin-bottom: 2rem;
 
