@@ -764,17 +764,18 @@ $btn-mb: 0.5rem;
     -ms-user-select: none;
     user-select: none;
   }
+  
   .draw-line-container {
     width: 100%; /* Chiếm toàn bộ chiều rộng của thẻ aside */
     display: flex;
     justify-content: center; /* Đây sẽ căn giữa nội dung theo trục ngang */
-  }
 
-  .draw-line {
-    border-top: 0.5px solid var(--line-sidebar-color); /* Màu sáng nhạt */
-    width: 100%; /* Độ dài của đường kẻ, bạn có thể điều chỉnh theo ý muốn */
-    margin-top: 20px;
-    margin-bottom: 10px; /* Khoảng cách phía dưới */
+    .draw-line {
+      border-top: 0.5px solid var(--line-sidebar-color); /* Màu sáng nhạt */
+      width: 100%; /* Độ dài của đường kẻ, bạn có thể điều chỉnh theo ý muốn */
+      margin-top: 20px;
+      margin-bottom: 10px; /* Khoảng cách phía dưới */
+    }
   }
 
   ul {
