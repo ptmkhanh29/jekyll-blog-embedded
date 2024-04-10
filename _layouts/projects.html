@@ -1,0 +1,35 @@
+---
+layout: page
+title: Repositories Information
+---
+
+<div id="repositories" class="d-flex flex-wrap mx-xl-2">
+  <!-- Repositories information will be displayed here -->
+</div>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    // Danh sách tên repositories bạn quan tâm
+    const repoList = ['STM32F4-MPU6050-I2C-with-Timer', 'Leetcode-Solution-using-C-Programing-Embedded-Pratices', 'jekyll-blog-embedded']; // Thay thế bằng tên thực tế của các repositories
+
+    repoList.forEach(function(repoName) {
+      fetch(`https://api.github.com/repos/ptmkhanh29/${repoName}`)
+        .then(response => response.json())
+        .then(data => {
+          // Tạo một phần tử HTML mới để hiển thị thông tin repo
+          const repoDiv = document.createElement('div');
+          repoDiv.innerHTML = `
+            <div class="repo">
+              <h2>${data.name}</h2>
+              <p>Số sao: ${data.stargazers_count}</p>
+              <p>Số forks: ${data.forks_count}</p>
+              <p>Lần commit cuối: ${new Date(data.pushed_at).toLocaleDateString()}</p>
+              <a href="${data.html_url}" target="_blank">Xem Repo</a>
+            </div>
+          `;
+          document.getElementById('repositories').appendChild(repoDiv);
+        })
+        .catch(error => console.error('Lỗi:', error));
+    });
+  });
+</script>

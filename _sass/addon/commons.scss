@@ -729,7 +729,7 @@ $btn-mb: 0.5rem;
   }
 
   .profile-wrapper {
-    @include profile-mt-mb(2.5rem, 0.8rem);
+    @include profile-mt-mb(3.5rem, 0.8rem);
     @extend %clickable-transition;
 
     padding-left: 1.5rem;
@@ -769,7 +769,7 @@ $btn-mb: 0.5rem;
     border-top: 0.5px solid var(--line-sidebar-color);
     width: 100%; /* Hoặc bất kỳ giá trị nào bạn muốn */
     margin-top: 20px; /* Đặt khoảng cách trên */
-    margin-bottom: 10px; /* Đặt khoảng cách dưới */
+    margin-bottom: 0; /* Đặt khoảng cách dưới */
   }
 
   .custom-border-bottom-line {
@@ -781,10 +781,30 @@ $btn-mb: 0.5rem;
     margin-right: 1.25rem;
   }
 
+  .status-indicators {
+    position: absolute;
+    top: 8px; // Hoặc bất kỳ giá trị nào bạn muốn để chỉ định vị trí từ đỉnh.
+    left: 1.5rem; // Đặt khoảng cách từ cạnh trái của sidebar.
+
+    .status-dot {
+      height: 12px;
+      width: 12px;
+      border-radius: 50%;
+      display: inline-block;
+      margin-right: 8px; // Khoảng cách giữa các dots.
+
+      // Định nghĩa các màu cho các dots.
+      &-red { background-color: #e57373; }
+      &-yellow { background-color: #fff176; }
+      &-green { background-color: #81c784; }
+    }
+  }
+
   ul {
     margin-bottom: 2rem;
 
     li.nav-item {
+      font-family: 'Roboto Mono', monospace;
       opacity: 0.9;
       width: 100%;
       padding-left: 1.5rem;
@@ -1097,6 +1117,7 @@ search {
     }
   }
 } /* #search-results */
+
 
 #topbar-title {
   display: none;

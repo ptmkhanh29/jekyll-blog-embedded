@@ -1,21 +1,38 @@
 #  The contact options.
 
 - type: github
-  icon: "fab fa-github"
+  icon: "/assets/img/favicons/github-icon.svg"
   url: 'https://github.com/ptmkhanh29'
 
 - type: email
-  icon: "fas fa-envelope"
+  icon: "/assets/img/favicons/envelope-icon.svg"
   noblank: true
   url: 'tomail:ptmkhanh29@gmail.com'
 
 - type: linkedin
-  icon: "fab fa-linkedin"
+  icon: "/assets/img/favicons/linkedin-icon.svg"
   url: 'https://www.linkedin.com/in/ptmkhanh29/'
 
 - type: facebook
-  icon: "fab fa-facebook"
+  icon: "/assets/img/favicons/facebook-icon.svg"
   url: 'https://www.facebook.com/MinhKhanhPhanTruong/'
+
+# - type: github
+#   icon: "fab fa-github"
+#   url: 'https://github.com/ptmkhanh29'
+
+# - type: email
+#   icon: "fas fa-envelope"
+#   noblank: true
+#   url: 'tomail:ptmkhanh29@gmail.com'
+
+# - type: linkedin
+#   icon: "fab fa-linkedin"
+#   url: 'https://www.linkedin.com/in/ptmkhanh29/'
+
+# - type: facebook
+#   icon: "fab fa-facebook"
+#   url: 'https://www.facebook.com/MinhKhanhPhanTruong/'
 
 #- type: rss
 #  icon: "fas fa-rss"

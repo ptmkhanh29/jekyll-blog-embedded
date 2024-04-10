@@ -2,7 +2,7 @@
 # The default layout is 'page'
 icon: fas fa-info-circle
 img_path: "/assets/img/about-tab"
-order: 4
+order: 5
 ---
 
 **Welcome to blog của mình**, tính đến thời điểm hiện tại, ngay ngày mình deploy chiếc blog cute này (ngày 21/03/2024) thì kinh nghiệm của mình vừa tròn 1 năm 1 ngày. Sau một năm đi làm, mình cũng mong muốn share cũng như một cách để mình ôn lại những gì đã học được, và mục đích thứ 2 là để push Resume tìm việc thôi đó ạ, lương thấp cuộc sống bấp bênh quá đi.

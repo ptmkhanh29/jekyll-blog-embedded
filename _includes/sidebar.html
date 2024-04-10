@@ -1,5 +1,13 @@
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
 <!-- The Side Bar -->
 <aside aria-label="Sidebar" id="sidebar" class="d-flex flex-column align-items-end">
+  <!-- Cricle indicators -->
+  <!-- <div class="status-indicators">
+    <span class="status-dot status-dot-red"></span>
+    <span class="status-dot status-dot-yellow"></span>
+    <span class="status-dot status-dot-green"></span>
+  </div>-->
+  <!-- End Cricle indicators -->
   <header class="profile-wrapper">
     <a href="{{ '/' | relative_url }}" id="avatar" class="rounded-circle">
       {% if site.avatar != empty and site.avatar %}
@@ -61,8 +69,11 @@
   <!-- Icon Profile -->
   <div class="sidebar-bottom d-flex flex-wrap  align-items-center w-100">
     {% unless site.theme_mode %}
-      <button type="button" class="mode-toggle btn" aria-label="Switch Mode">
+      <!--<button type="button" class="mode-toggle btn" aria-label="Switch Mode">
         <i class="fas fa-adjust"></i>
+      </button>-->
+      <button type="button" class="mode-toggle btn" aria-label="Switch Mode">
+        <img id="toggle-icon" src="/assets/img/favicons/sun.svg" alt="Icon" />
       </button>
 
       {% if site.data.contact.size > 0 %}
@@ -106,7 +117,7 @@
             rel="{{ link_types }}"
           {% endunless %}
         >
-          <i class="{{ entry.icon }}"></i>
+          <img src="{{ entry.icon }}"></i>
         </a>
       {% endif %}
     {% endfor %}
