@@ -4,9 +4,24 @@
 @font-face {
   font-family: 'Hack';
   font-style: normal;
-  font-weight: bold;
-  src: url('/assets/fonts/HackNerdFontMono-Bold.ttf') format('ttf'),
+  font-weight: normal;
+  src: url('../assets/fonts/HackNerdFontMono-Bold.ttf') format('truetype'),
 }
+
+@font-face {
+  font-family: 'HackNerdFontPropo-Regular';
+  src: url('../assets/fonts/HackNerdFontPropo-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'HackNerdFont-Regular';
+  src: url('../assets/fonts/HackNerdFont-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 
 html {
   @media (prefers-color-scheme: light) {
@@ -744,7 +759,7 @@ $btn-mb: 0.5rem;
   }
 
   .site-title {
-    font-family: inherit;
+    font-family: 'Hack', sans-serif;
     font-weight: 900;
     font-size: 1.75rem;
     line-height: 1.2;
@@ -761,6 +776,8 @@ $btn-mb: 0.5rem;
   }
 
   .site-subtitle {
+    font-family: 'HackNerdFontPropo-Regular', monospace;
+    font-weight: 400;
     font-size: 95%;
     color: var(--site-subtitle-color);
     margin-top: 0.25rem;
@@ -810,6 +827,7 @@ $btn-mb: 0.5rem;
     margin-bottom: 2rem;
 
     li.nav-item {
+      font-family: 'HackNerdFontPropo-Regular', monospace;
       font-weight: bold;
       opacity: 0.9;
       width: 100%;
@@ -957,6 +975,7 @@ $btn-mb: 0.5rem;
   }
 
   #breadcrumb {
+    font-family: 'Hack', monospace;
     font-size: 1rem;
     color: var(--text-muted-color);
     padding-left: 0.5rem;
