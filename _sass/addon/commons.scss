@@ -1,6 +1,12 @@
 /*
   The common styles
 */
+@font-face {
+  font-family: 'Hack';
+  font-style: normal;
+  font-weight: bold;
+  src: url('/assets/fonts/HackNerdFontMono-Bold.ttf') format('ttf'),
+}
 
 html {
   @media (prefers-color-scheme: light) {
@@ -804,7 +810,7 @@ $btn-mb: 0.5rem;
     margin-bottom: 2rem;
 
     li.nav-item {
-      font-family: 'Roboto Mono', monospace;
+      font-weight: bold;
       opacity: 0.9;
       width: 100%;
       padding-left: 1.5rem;
