@@ -3,18 +3,18 @@
 # ----- Commons label -----
 
 layout:
-  post: Bài viết
-  category: Danh mục
-  tag: Thẻ
+  post: Post
+  category: Category
+  tag: Tag
 
 # The tabs of sidebar
 tabs:
   # format: <filename_without_extension>: <value>
-  home: Trang chủ
-  categories: Các danh mục
-  tags: Các thẻ
-  archives: Lưu trữ
-  about: Giới thiệu
+  home: Home
+  categories: Categories
+  tags: Tags
+  archives: Archives
+  about: Projects
 
 # the text displayed in the search bar & search results
 search:

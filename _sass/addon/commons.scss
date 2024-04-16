@@ -213,13 +213,14 @@ i {
 #panel-wrapper {
   /* the headings */
   .panel-heading {
-    font-family: inherit;
-    line-height: inherit;
+    font-family: 'Hack', monospace;
+    line-height: 'Hack', monospace;
 
     @include label(inherit);
   }
 
   .post-tag {
+    font-family: 'Hack', monospace;
     line-height: 1.05rem;
     font-size: 0.85rem;
     border-radius: 0.8rem;
@@ -760,7 +761,7 @@ $btn-mb: 0.5rem;
 
   .site-title {
     font-family: 'Hack', sans-serif;
-    font-weight: 900;
+    font-weight: 800;
     font-size: 1.75rem;
     line-height: 1.2;
     letter-spacing: 0.25px;
